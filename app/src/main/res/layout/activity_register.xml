@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="215dp"
+        android:layout_height="65dp"
+        app:srcCompat="@drawable/imagen1"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/name_Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:layout_marginTop="@dimen/input_margin"
+        android:ems="10"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/last_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name"
+        android:layout_marginTop="@dimen/input_margin"
+        android:ems="10"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/e_mail"
+        android:layout_marginTop="@dimen/input_margin"
+        android:ems="10"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:layout_marginTop="@dimen/input_margin"
+        android:ems="10"
+        android:inputType="textPassword"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/terms"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btn_sing_in"
+        android:layout_width="219dp"
+        android:layout_height="40dp"
+        android:text="@string/sing_in"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+
+</LinearLayout>
